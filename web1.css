@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.kapsa{
+    width: 900px;
+    margin: 0px auto;
+    background-color: #dddd;
+    padding: 50px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: brown;
+    border-bottom: 2px dotted brown;
+}
+.sol{
+    float: left;
+    margin-right: 15px;
+}
+.sag{
+    float: right;
+    margin-left: 15px;
+}
+p{
+    line-height: 150%;
+    text-align: justify;
+    font-size: 18px;
+}
+.egik{
+    font-style: italic;
+}
