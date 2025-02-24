@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F5F7;
+    font-family:'Montserrat', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #BB9AB1 ;
+    color: black;
+    width: 900px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.body{
+    background-color: #B7B7B7;
+    margin: 0 auto;
+    padding: 40px;
+    width: 900px;
+}
+
+.profil img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 50%;
+    border: 3px solid #F5F5F7;
+    background: linear-gradient(130deg,#B7B7B7,#5D3F6B);
+    animation: animasyon 2s linear infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes animasyon{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.tanim{
+    padding: 10px;
+    text-align: justify;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    text-align: center;
+    border-bottom: 2px solid #5D3F6B;
+    padding-bottom: 10px;
+}
+
+.section  ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section  ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section  ul li:last-child {
+    border-bottom: none;
+}
+
+.iletisim {
+    background-color: #BB9AB1;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.iletisim h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.iletisim p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.iletisim a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.iletisim a:hover {
+    background-color: #987D9A;
+}
+
+.iletisim i {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 767px) {
+    .header, .body {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .profil img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .iletisim {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .tanim {
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header, .body {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .profil img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .iletisim {
+        width: 80%;
+        max-width: 550px;
+    }
+
+    .tanim {
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .header, .body {
+        width: 900px;
+        padding: 30px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .profil img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .iletisim {
+        width: 70%;
+        max-width: 600px;
+    }
+}
